@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix eurio: <http://data.europa.eu/s66#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+### Saxion lectoraten
+<https://saxion.nl/ami> a eurio:OrganisationUnit;
+    rdfs:label "Ambient Intelligence"@en;
+    skos:altLabel "AmI"@en,"AMI"@en;
+    eurio:isUnitOf wd:Q2104082  .
+# AmI Role
+<https://amilab.nl/ami-role-participant> a eurio:OrganisationRole ;
+    eurio:roleLabel "participant"@en ;
+    eurio:isRoleOf <https://saxion.nl/ami> .
+
+# Zelfde als Nano-Bio (NBIO), Nanotechnology - NanoPhysics (NPH)
+<https://www.saxion.nl/onderzoek/lectoraten/applied-nanotechnology> a eurio:OrganisationUnit;
+   rdfs:label "Applied Nanotechnology"@en;
+   skos:altLabel "ANT"@en;
+   eurio:isUnitOf wd:Q2104082  .
+
+<https://saxion.nl/id> a eurio:OrganisationUnit;
+    rdfs:label "Industrial Design"@en;
+    eurio:isUnitOf wd:Q2104082  .
+
+<https://saxion.nl/iwt> a eurio:OrganisationUnit;
+    rdfs:label "International Water Technology"@en;
+    skos:altLabel "IWT"@en;
+    eurio:isUnitOf wd:Q2104082  .
+
+<https://www.saxion.nl/onderzoek/lectoraten/lichtgewicht-construeren> a eurio:OrganisationUnit;
+    rdfs:label "Lightweight Structures"@en;
+    rdfs:label "Lichtgewicht Construeren"@nl;
+    eurio:isUnitOf wd:Q2104082  .
+
+<https://saxion.nl/ses> a eurio:OrganisationUnit;
+    rdfs:label "Sustainable Energy Systems"@en;
+    rdfs:label "Duurzame Energie Voorziening"@nl;
+    skos:altLabel "SES"@en;
+    eurio:isUnitOf wd:Q2104082  .
+
+<https://saxion.nl/sc> a eurio:OrganisationUnit;
+    rdfs:label "Smart Cities"@en;
+    eurio:isUnitOf wd:Q2104082  .
+
+<https://saxion.nl/smart> a eurio:OrganisationUnit;
+    rdfs:label "Smart Mechatronics and Robotics"@en;
+    skos:altLabel "SMART"@en;
+    eurio:isUnitOf wd:Q2104082  .
+
+<https://saxion.nl/sft> a eurio:OrganisationUnit;
+    rdfs:label "Sustainable & Functional Textiles"@en;
+    skos:altLabel "SFT"@en ;
+    eurio:isUnitOf wd:Q2104082  .
+
+# Used to be called: Advanced Forensic Technology (AFT)
+<https://saxion.nl/tci> a eurio:OrganisationUnit;
+    rdfs:label "Technologies for Criminal Investigations"@en;
+    skos:altLabel "TCI"@en;
+    eurio:isUnitOf wd:Q2104082  .
+
+### Windesheim lectoraten
+<https://www.windesheim.nl/onderzoek/lectoraten/ict-innovaties-in-de-zorg> a eurio:OrganisationUnit;
+    rdfs:label "ICT-innovaties in de Zorg"@nl ;
+    eurio:isUnitOf wd:Q2929947.
+
+# Zelfde als IAR
+<https://www.windesheim.nl/onderzoek/lectoraten/digital-business-and-society> a eurio:OrganisationUnit;
+    rdfs:label "Digital Business & Society"@nl ;
+    eurio:isUnitOf wd:Q2929947.
+    
+<https://www.windesheim.nl/onderzoek/lectoraten/energietransitie> a eurio:OrganisationUnit;
+    rdfs:label "Energietransitie"@nl ;
+    eurio:isUnitOf wd:Q2929947.
+
+<https://www.windesheim.nl/onderzoek/lectoraten/kunststoftechnologie> a eurio:OrganisationUnit;
+    rdfs:label "Kunststoftechnologie"@nl ;
+    eurio:isUnitOf wd:Q2929947.
+
+wd:Q1479312 skos:prefLabel "Nedap"@en .
+wd:Q1547084 skos:prefLabel "University of Twente"@en .

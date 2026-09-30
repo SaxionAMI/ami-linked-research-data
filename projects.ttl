@@ -1,0 +1,1441 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix eurio: <http://data.europa.eu/s66#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+#######################################################
+################ PROJECTEN ############################
+#######################################################
+# 2010 Future Store
+<https://amilab.nl/projects/future-store> a eurio:Project ;
+    eurio:title "Future Store"@en ;
+    eurio:identifier "2010-16-9H" ;
+    eurio:startDate "2010-06-01"^^xsd:date ;
+    eurio:endDate "2012-06-30"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en;
+        eurio:isRoleOf wd:Q1479312 # Nedap
+    ] ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/96ad4a240cc1fdb7f47a> # RAAK-mkb
+    ] ;
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/future-store"^^xsd:anyURI .
+    #Saxion, Novay, Popai Benelux, Piet Zoomers, Hoogenboom mode, RietveldIndividuals, Assink Coiffures, Hofland Optiek, Van Bommel, Nedap, Hecla, Hessels Industrie, KP Interieur, Argentum, Noéton en CBW-Mitex
+
+<urn:isbn:9789081842457> a schema:Book ;
+    schema:name "Winkel van de toekomst, toekomst van de winkel?"@nl ;
+    schema:isbn "9789081842457" ;
+    schema:inLanguage "nl" ;
+    schema:url "https://hbo-kennisbank.nl/details/saxion_kenniscentra:AFC54EAAD075C7E5C12579C900304705"^^xsd:anyURI ;
+    eurio:isResultOf <https://amilab.nl/projects/future-store> .
+
+# 2010 Wireless Sensortechnologie bij Calamiteiten
+<https://amilab.nl/projects/wireless-sensortechnologie-calamiteiten> a eurio:Project ;
+    eurio:title "Wireless Sensortechnologie bij Calamiteiten"@nl ;
+    eurio:startDate "2010-06-01"^^xsd:date ;
+    eurio:endDate "2012-06-30"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/96ad4a240cc1fdb7f47a> # RAAK-mkb
+    ] ;
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/wireless-sensortechnologie-bij-calamiteiten"^^xsd:anyURI .
+
+<urn:isbn:9789081842464> a schema:Book ;
+    schema:name "Wireless Sensortechnologie bij Calamiteiten"@nl ;
+    schema:isbn "9789081842464" ;
+    schema:inLanguage "nl" ;
+    #schema:archivedAt ""^^xsd:anyURI ;
+    eurio:isResultOf <https://amilab.nl/projects/wireless-sensortechnologie-calamiteiten> .
+
+# 2010 GoGreen
+<https://amilab.nl/projects/go-green> a eurio:Project ;
+    eurio:title "Greener house through a self-learning, privacy-aware user-centric energy-aware wireless monitoring and control system"@en ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "GoGreen"@en 
+    ] ;
+    eurio:identifier "IGC1017" ;
+    eurio:startDate "2010-09-01"^^xsd:date ;
+    eurio:endDate "2014-09-01"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "lead-applicant"@en ;
+        eurio:isRoleOf wd:Q1547084 # University of Twente
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q752663 # TU Delft
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q632004 # Radboud
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q7064503 # Novay (telematica instituut)
+    ] ;    
+    eurio:isFundedBy [
+        a eurio:Grant ;
+        eurio:hasFundingAmount [
+            a eurio:MonetaryAmount ;
+            eurio:value "1078837"^^xsd:decimal ;
+            eurio:currency "EUR"
+        ]
+    ] .
+    # Other parties: Ambient Systems, Pulse Technology Centre, Locus Positioning
+    # Funded by Rijksdienst voor Ondernement Nedederland, IOP GenCom 
+
+<https://doi.org/10.1109/IE.2012.23> a schema:ScholarlyArticle ;
+    schema:name "Persona-Based Adaptation in a Smart Green Home"@en ;
+    schema:datePublished "2012-08-06"^^xsd:date ;
+    schema:publisher "IEEE" ;
+    schema:url "https://doi.org/10.1109/IE.2012.23"^^xsd:anyURI ;
+    eurio:doi "10.1109/IE.2012.23" ;
+    schema:author <https://orcid.org/0000-0003-2368-4970> ; # Etto
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter Teeuw
+    schema:author <https://orcid.org/0000-0001-8578-6310> ; # Henk van Leeuwen
+    schema:author <https://orcid.org/0000-0002-3399-1790> ; # Paul Havinga
+    eurio:isResultOf <https://amilab.nl/projects/go-green> .
+
+# 2011 Veiligheid op de Werkvloer
+<https://amilab.nl/projects/veiligheid-op-de-werkvloer> a eurio:Project ;
+    eurio:title "Veiligheid op de Werkvloer"@nl ;
+    eurio:title "Safety on the Workfloor"@en ;
+    eurio:identifier "RAAK.PRO02.013" ;
+    eurio:startDate "2011-01-01"^^xsd:date ;
+    eurio:endDate "2015-01-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1547084 # University of Twente
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q3913196 # Thales Nederland
+    ] ; 
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q2197279 # TenCate
+    ] ; 
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1572363 # BAM
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q7064503 # Novay (was Telematica Instituut??)
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q294520 # Alten
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q30285148 # Noldus Information Technology
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1599471 # PANalytical
+    ] ;    
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/23bd16a93a7f1d64bbd7> # RAAK-PRO
+    ] ;
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/veiligheid-op-de-werkvloer"^^xsd:anyURI .
+    # Norma MPM ontbreek, is nu onderdeel van NTS groep??
+
+<https://www.designsociety.org/publication/35918> a schema:ScholarlyArticle ;
+    schema:name "A Series of Student Design Projects for Improving and Modernizing Safety Helmets"@en ;
+    schema:author <https://orcid.org/0000-0002-4023-2522> ; # Johannes de Boeren
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:publisher "Design Society" ;
+    schema:url "https://www.designsociety.org/publication/35918/a_series_of_student_design_projects_for_improving_and_modernizing_safety_helmets"^^xsd:anyURI ;
+    eurio:isResultOf <https://amilab.nl/projects/veiligheid-op-de-werkvloer> .
+
+# 2012 FireBee
+<https://amilab.nl/projects/firebee> a eurio:Project ;
+    eurio:title "FireBee"@en ;
+    eurio:startDate "2012-01-01"^^xsd:date ; # Uncertain
+    eurio:endDate "2014-01-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "lead-applicant"@en;
+        eurio:isRoleOf wd:Q1435898 # Fontys
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en;
+        eurio:isRoleOf wd:Q2643409 # Avans
+    ] ;    
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/96ad4a240cc1fdb7f47a> # RAAK-mkb
+    ] ;
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/firebee"^^xsd:anyURI .
+
+# 2013 Virtuele verwachting, fysieke beleving
+<https://amilab.nl/projects/virtuele-verwachting-fysieke-beleving> a eurio:Project ;
+    eurio:title "Virtuele verwachting, Fysieke beleving"@nl ;
+    eurio:title "Virtual expectation, Physical experience"@en ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:startDate "2013-02-01"^^xsd:date ;
+    eurio:endDate "2015-01-31"^^xsd:date ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/96ad4a240cc1fdb7f47a> # RAAK-mkb
+    ] ;    
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/virtuele-verwachting-fysieke-beleving"^^xsd:anyURI .
+
+# 2013 SaxShirt
+<https://www.nwo.nl/en/projects/13177-0> a eurio:Project ;
+    eurio:title "SaxShirt"@en ;
+    eurio:identifier "13177" ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/nwo-demonstrator> ;
+        eurio:hasFundingAmount [
+            a eurio:MonetaryAmount ;
+            eurio:value "149724"^^xsd:decimal ;
+            eurio:currency "EUR"
+        ]
+    ] ;
+    eurio:startDate "2013-12-01"^^xsd:date ;
+    eurio:endDate "2015-07-24"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:PersonRole;
+        eurio:roleLabel "lead-applicant"@en ;
+        eurio:isRoleOf <https://orcid.org/0000-0002-1909-9763> ; # Wouter Teeuw
+        eurio:isEmployedBy wd:Q2104082 # Saxion
+    ] ;
+    eurio:abstract "Bij veiligheid in (industriële) werkomgevingen is de menselijke factor een belangrijk element. Daarbij spelen zaken als stress, oververmoeidheid en/of uitputting, oververhitting en/of onderkoeling, concentratie, en in sommige gevallen zelf uitdroging. Daarvoor is het van belang dat de werknemer, collega?s of leidinggevenden hierin inzicht hebben. Fysiologische factoren als hartslag, respiratie (ademhaling), transpiratie (zweten) en lichaamstemperatuur (kerntemperatuur) zijn hiervoor de belangrijkste indicatoren. Maar er spelen ook externe, omgevingsfactoren zoals de omgevingstemperatuur, de locatie waar iemand zich bevindt, de nabijheid van collega?s etc. Saxion heeft, samen met bedrijven en de Universiteit Twente (UT), kennis ontwikkeld op het gebied van textiel en de wijze waarop sensoren geïntegreerd kunnen worden in het textielgrid. Daarmee is een geïntegreerd systeem ontstaan dat kan functioneren als technologieplatform voor situational awareness dat dynamisch op de omgeving en op de drager in die omgeving reageert en tot actie kan aanzetten. Het systeem is selfsupporting en heeft een eigen energiebron. Met dit project wordt dit SaxShirt als comfortabel draagbaar textielplatform voor sensoren gedemonstreerd, dat verschillende sensoren kan bevatten en gebruikt kan als persoonlijk detectiesysteem in extreme werkomstandigheden. Bestaande shirts hebben drie grote nadelen en zijn derhalve nauwelijks gangbaar: - De functionaliteit is vaak technology push. Zo wordt bijvoorbeeld beweging gemeten, maar een fysiotherapeut denkt in termen van belasting en belastbaarheid. Wat moet hij met zo'n shirt? Ook zijn de shirts vaak specifiek gericht op 1 doelgroep en is daarmee net niet geschikt voor een andere doelgroep. Er is behoefte aan een flexibel shirt waarbij de wensen van de eindgebruiker tijdens de ontwikkeling ervan voorop komen te staan. - Het comfort. Als iets niet comfortabel zit, wordt het niet gedragen. Bouwhelmen zijn al een probleem. Menig voetbalclub heeft een duur sensorshirtsysteem aangeschaft dat vervolgens in de kast ligt omdat het tijdens trainingen (laat staan wedstrijden) niet lekker zit. Aspecten als drapeerbaarheid en plooibaarheid zijn meetbare karakteristieken waarvan uit research gebleken is dat die instelbaar zijn en daarmee het comfort verhogen. Gericht ontwikkelen met deze parameters maakt acceptatie veel beter en het nalaten hiervan is tot nu toe steeds een ernstige omissie in het onderzoek geweest. - Reiniging. Een shirt waar je in zweet wil je wassen, en dan moet alle sensoriek eraf. En de eventueel geleidende garens zijn niet altijd wasbaar cq. werken vaak na een aantal keer wassen niet meer. De systeem-robuustheid en geschiktheid voor onderhoud zijn daarmee belangrijke randvoorwaarden. Met dit demonstratorproject worden deze nadelen aangepakt en opgelost. Het shirt wordt op de blote huid gedragen onder eventuele beveiligende kleding. Het shirt kan verschillende sensoren bevatten, bijvoorbeeld voor het continu meten van de temperatuur op de huid, hartslag, zweetgedrag en andere nog te bepalen fysiologisch relevante parameters, of de aanwezigheid van potentieel bedreigende externe omstandigheden. De data wordt via een draadloze verbinding (wifi/zigbee) verzonden ter externe analyse en evaluatie. Het shirt bevat actuatoren voor feedback naar de gebruiker. Bij succesvol vormgeven van zo?n shirt is er een technologie platform ontwikkeld dat ook voor andere toepassingen geschikt is, denk hierbij aan sport, militaire toepassingen en eerstelijns hulpverleners. De uitdagingen in het project liggen in: \" robuustheid van het geleidende, sensorische textielgrid; \" de robuustheid van de connector als verbinding tussen elektrisch grid en de elektronica; \" draagcomfort in relatie tot het elektrisch geleidende sensorische grid en de extreme werkomstandigheden; \" wasbaarheid/onderhoud en sensorische betrouwbaarheid over langere periode; \" de genericiteit van het shirt waardoor het niet uitsluitend voor een bepaald van te voren gekozen toepassing bruikbaar is, maar aanpasbaar aan de toepassing en de situatie en de wens of eis van de eindgebruiker."@nl ;
+    eurio:url "https://www.nwo.nl/en/projects/13177"^^xsd:anyURI .
+
+<https://doi.org/10.1145/2968219.2972714> a schema:ScholarlyArticle ;
+    schema:name "Towards decisive garments for heat stress risk detection"@en ;
+    schema:datePublished "2016-09-12"^^xsd:date ;
+    schema:publisher "ACM" ;
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter Teeuw
+    schema:author <https://orcid.org/0000-0003-2638-7808> ; # Peter Ebben
+    schema:url "https://doi.org/10.1145/2968219.2972714"^^xsd:anyURI ;
+    eurio:doi "10.1145/2968219.2972714" ;
+    eurio:isResultOf <https://www.nwo.nl/en/projects/13177-0> ;
+    eurio:isResultOf <https://techforfuture.nl/project/130107> .
+    
+# 2013 TEC4SE
+<https://amilab.nl/projects/tec4se> a eurio:Project ;
+    eurio:title "TEC4SE"@en ;
+    eurio:startDate "2013-02-01"^^xsd:date ;
+    eurio:endDate "2014-10-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q3913196 # Thales
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1815485 # Veiligheidsregio twente
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1547084 # University of Twente
+    ] .
+    # Verder nog: Brandweer Twente, Politie Twente, GHOR twente, Novay, WMC, Peek Traffic, Pino&Partners, ENAI, Gemeente Enschede, BlueMark Innovations, ISOlectra
+
+# 2013 MoSeS 
+<https://techforfuture.nl/project/130107> a eurio:Project ;
+    eurio:title "MoSeS" ;
+    skos:prefLabel "Mobile Sensing for Safety"@en ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "MoSeS"@en ;
+        eurio:definition "Mobile Sensing for Safety"@en
+    ] .
+
+# 2014 Prestatieverbetering in de topsport
+<https://techforfuture.nl/project/130105> a eurio:Project ;
+    eurio:title "Prestatieverbetering in de topsport"@nl ;
+    eurio:identifier "130105" ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:startDate "2014-03-01"^^xsd:date ;
+    eurio:endDate "2016-02-29"^^xsd:date .
+
+<https://doi.org/10.1007/s10484-016-9344-y> a schema:ScholarlyArticle ;
+    schema:name "Increasing Performance of Professional Soccer Players and Elite Track and Field Athletes with Peak Performance Training and Biofeedback: A Pilot Study"@en ;
+    schema:author <https://orcid.org/0009-0007-2230-1567> ; # Noortje Rijken
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter
+    schema:datePublished "2016-10-19"^^xsd:date ;
+    schema:publisher "Springer" ;
+    schema:url "https://doi.org/10.1007/s10484-016-9344-y"^^xsd:anyURI ;
+    eurio:doi "10.1007/s10484-016-9344-y" ;
+    eurio:isResultOf <https://techforfuture.nl/project/130105> .
+    
+
+# 2015 MoSeS II
+<https://techforfuture.nl/project/1514> a eurio:Project ;
+    eurio:title "MoSeS II" ;
+    skos:prefLabel "Mobile Sensing for Safety"@en ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "MoSeS"@en ;
+        eurio:definition "Mobile Sensing for Safety"@en
+    ] .
+
+<https://doi.org/10.33965/ES2019_201904L009> a schema:ScholarlyArticle ;
+    schema:name "Moses Health Monitoring system for Firefighters"@en ;
+    schema:author <https://orcid.org/0000-0003-2368-4970> ; # Etto
+    schema:author <https://orcid.org/0000-0002-2626-1837> ; # Tatiana
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:publisher "IADIS" ;
+    rdfs:comment "IADIS International Conference e-Society 2019, pp. 73-80"@en ;
+    schema:url "https://doi.org/10.33965/ES2019_201904L009"^^xsd:anyURI ;
+    eurio:doi "10.33965/ES2019_201904L009" ;
+    eurio:isResultOf <https://techforfuture.nl/project/1514> .
+
+<https://youtu.be/CbfIFBv7hug> a schema:Clip ;
+    schema:name "MoSeS | Mobile Sensing for Safety" ;
+    schema:url "https://youtu.be/CbfIFBv7hug"^^xsd:anyURI ;
+    eurio:isResultOf <https://techforfuture.nl/project/1514> .
+    
+# 2016 Passende mode via Internet
+<https://www.nwo.nl/projecten/raakmkb04004-0> a eurio:Project ;
+    eurio:title "Passende mode via Internet"@nl ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+        eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "lead-applicant"@en ;
+        eurio:isRoleOf wd:Q945017 # Hogeschool van Amsterdam
+    ].
+
+<https://doi.org/10.5281/zenodo.17747672> a schema:Poster ;
+    schema:name "Fitting Fashion Using Machine Learning"@en ;
+    schema:url "https://doi.org/10.5281/zenodo.17747672"^^xsd:anyURI ;
+    eurio:doi "10.5281/zenodo.17747672" ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/raakmkb04004-0> .
+    
+<https://youtu.be/XvOM29ZtIeU> a schema:Clip;
+    schema:url "https://youtu.be/XvOM29ZtIeU"^^xsd:anyURI ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/raakmkb04004-0> .
+    
+<https://vimeo.com/279026245> a schema:Clip;
+    schema:name "Passende mode via Internet"@nl ;
+    schema:url "https://vimeo.com/279026245"^^xsd:anyURI ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/raakmkb04004-0> .
+
+# 2016 SaxShoe
+<https://www.nwo.nl/projecten/2015-03-04m-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+<https://youtu.be/MwvZa6YrYSA> a schema:Clip;
+    schema:url "https://youtu.be/MwvZa6YrYSA"^^xsd:anyURI ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/2015-03-04m-0> .
+
+# 2016 STEADY
+<https://www.nwo.nl/projecten/2015-02-58p-0> a eurio:Project ;
+    eurio:identifier "2015-02-58P" ;
+    eurio:title "STEADY"@en ;
+    eurio:startDate "2016-03-01"^^xsd:date ;
+    eurio:endDate "2018-11-30"^^xsd:date ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "STEADY"@en ;
+        eurio:definition "Sustained Technology for Evaluation of lumbar Atrophy and DYsfunction"@en
+    ] ;
+    eurio:url "https://www.sia-projecten.nl/project/steady"^^xsd:anyURI ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+<https://doi.org/10.1097/BRS.0000000000003624> a schema:ScholarlyArticle ;
+    schema:name "Intramuscular EMG Versus Surface EMG of Lumbar Multifidus and Erector Spinae in Healthy Participants"@en ;
+    eurio:doi "10.1097/BRS.0000000000003624" ;
+    schema:datePublished "2020-05-07"^^xsd:date ;
+    schema:publisher "Wolters Kluwe" ;
+    schema:author <https://orcid.org/0000-0003-2368-4970> ; # Etto
+    eurio:isResultOf <https://www.nwo.nl/projecten/2015-02-58p-0> .
+
+# 2016 Soft modular biomimetic exoskeleton to assist people with mobility impairments"
+<https://doi.org/10.3030/688175> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "XoSoft"@en ;
+        eurio:definition "Soft modular biomimetic exoskeleton to assist people with mobility impairments"@en
+    ] .
+
+<https://doi.org/10.1007/978-3-030-01887-0_75> a schema:ScholarlyArticle ;
+    schema:name "XoSoft Connected Monitor (XCM) Unsupervised Monitoring and Feedback in Soft Exoskeletons of 3D Kinematics, Kinetics, Behavioral Context and Control System Status"@en ;
+    schema:author <https://orcid.org/0000-0003-2678-6438> ; # Chris
+    schema:author <https://orcid.org/0000-0003-4464-1603> ; # Danny
+    schema:author <https://orcid.org/0000-0002-2626-1837> ; # Jeroen
+    schema:datePublished "2018-10-14"^^xsd:date ;
+    schema:publisher "Springer" ;
+    schema:url "https://doi.org/10.1007/978-3-030-01887-0_75"^^xsd:anyURI ;
+    eurio:doi "10.1007/978-3-030-01887-0_75" ;
+    eurio:isResultOf <https://doi.org/10.3030/688175> .
+
+<https://doi.org/10.1007/978-3-319-46532-6_14> a schema:ScholarlyArticle ;
+    schema:name "XoSoft - A Vision for a Soft Modular Lower Limb Exoskeleton"@en ;
+    schema:author <https://orcid.org/0000-0003-2678-6438> ; # Chris
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter
+    schema:datePublished "2016-10-05"^^xsd:date ;
+    schema:publisher "Springer" ;
+    schema:url "https://doi.org/10.1007/978-3-319-46532-6_14"^^xsd:anyURI ;
+    eurio:doi "10.1007/978-3-319-46532-6_14" ;
+    eurio:isResultOf <https://doi.org/10.3030/688175> .
+
+# 2017 Sensing alarm responses of ungulate herds to prevent poaching of endangered megafauna.
+<https://www.nwo.nl/projecten/raakpro02048-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2017 Data in Smart Industry
+<https://www.nwo.nl/projecten/raakmkb06007-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+<https://doi.org/10.1145/3359427.3361917> a schema:ScholarlyArticle ;
+    schema:name "Channel State Information (CSI) analysis for Predictive Maintenance using Convolutional Neural Network (CNN)"@en ;
+    schema:url "https://doi.org/10.1145/3359427.3361917"^^xsd:anyURI ;
+    schema:datePublished "2019-11-10"^^xsd:date ;
+    schema:publisher "ACM" ;
+    eurio:doi "10.1145/3359427.3361917" ;
+    schema:author <https://orcid.org/0009-0007-2805-1327> ; # Prachi Bagave
+    schema:author <https://orcid.org/0000-0002-2626-1837> ; # Jeroen Linssen
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter Teeuw
+    schema:author <https://orcid.org/0000-0003-4803-2709> ; # Jeroen Klein Brinke
+    schema:author <https://orcid.org/0000-0002-8379-770X> ; # Nirvana Meratnia
+    eurio:isResultOf <https://www.nwo.nl/projecten/raakmkb06007-0> .
+
+# 2017 Keep them rolling
+<https://www.nwo.nl/projecten/16092> a eurio:Project ;
+    eurio:title "Keep them rolling - meten van wegkwaliteit middels smartphones"@nl ;
+    eurio:identifier "16092" ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/nwo-demonstrator> ;
+        eurio:hasFundingAmount [
+            a eurio:MonetaryAmount ;
+            eurio:value "149948"^^xsd:decimal ;
+            eurio:currency "EUR"
+        ]
+    ] ;
+    eurio:startDate "2017-11-01"^^xsd:date ;
+    eurio:endDate "2023-10-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:PersonRole;
+        eurio:roleLabel "lead-applicant"@en ;
+        eurio:isRoleOf <https://orcid.org/0000-0002-3399-1790> ; # Paul Havinga
+        eurio:isEmployedBy wd:Q1547084 # University of Twente
+    ] ;
+    eurio:abstract "Het doel van het Keep Them Rolling project was om een efficient meetsysteem te demonstreren dat wegbeheerders een veel beter en tijdig inzicht verschaft in de onderhoudsstaat van de wegen die ze beheren. Om een dergelijk systeem op te schalen was het essentieel om de keten van belanghebbenden, hun werkwijze en behoeften, alsmede de obstakels voor technologieadoptie te begrijpen. Het project probeerde hiermee de business propositie de definieren dat de adoptie van een dergelijk systeem zou faciliteren."@nl ;
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/stw-keep-them-rolling"^^xsd:anyURI .
+
+# 2017 Positive emotions and environmental enrichment in pigs
+<https://amilab.nl/projects/digipig> a eurio:Project ;
+    eurio:title "Positive emotions and environmental enrichment in pigs"@en ;
+    eurio:identifier "268158" ;
+    eurio:startDate "2017-01-01"^^xsd:date ;
+    eurio:endDate "2020-12-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:isDisbursedBy wd:Q4356293; # Research Council of Norway
+        eurio:hasFundingAmount [
+             a eurio:MonetaryAmount ;
+             eurio:value "250000"^^xsd:decimal ;
+             eurio:currency "NOK"
+        ]
+    ] ;
+    eurio:url "https://prosjektbanken.forskningsradet.no/en/project/FORISS/268158"^^xsd:anyURI ;
+    eurio:abstract "We studied behaviours indicating positive affective states when social groups of pigs got access to a limited amount of specific rooting materials twice a day in the weaning period (5 weeks). In the first study, we observed behaviours considered indicative of positive (exploration, play, tail curled, wagging) and negative (aggression, ear or tail biting, tail down) behavioural responses to straw, silage, peat, or a combination of the three different materials in comparison to no added rooting materials (control condition, wood shavings litters present in all pens). In addition, we investigated the effect of rooting material on the activity budget on pigs (performance of variety of positive behaviours). Our results suggest that peat, or peat in combination with long-stemmed straw and silage, were the most effective rooting materials for inducing positive (i.e. increased incidence of positive behaviours), and reducing negative states (i.e. reduced incidence of negative behaviours) in weaned pigs. However, a combination of different rooting materials resulted in the greatest variety of positive behaviours. Straw and silage as single materials were intermediate regarding their stimulatiing properties, and the control groups had the greatest number of negative behaviours and the lowest number of positive behaviours. In conclusion, a combination of Three materials provided two times a day was the most stimulating and resulted in the most positive affective state in weaned pigs. In a second study, we included Felleskjøpets recently developed 'miljøfôr' that is meant to stimulate rooting and exploratory behaviour. We included straw, peat and the combination of the three and compared this to the control condition. This time we wanted to assess the effects of the different rooting materials and the combination of the three on behaviour, weight gain, learning ability, fear and ease of handling. The study was based on video analysis of behaviours in the groups as well as experimental tests. We concluded that especially peat as single material and peat in combination with straw and pellets, stimulate positive behaviours. Access to a combination of rooting materials reduced fear of novel objects, fear of unfamiliar humans, and increased collaboration between pigs to open a lid on a box to get access to rooting material. Again, a combination of three rooting materials was most stimulating for the pigs and could thus be recommended as a routine to improve pig welfare. Currently, we are developing an automated digital system for pigs to automatically recognise behavioural indicators of welfare. We started with annotating video images from the first study to determine posture of tail, head and body. The first task was to see if it was possible to identify individuel pigs in a pen. This was followed up by machine learning (computer) to detect the same type of pig`s body parts and postures. The results are promising with more than 90% precision."@en .
+
+<https://doi.org/10.3390/agriculture12010002> a schema:ScholarlyArticle ;
+    eurio:name "DigiPig: First Developments of an Automated Monitoring System for Body, Head and Tail Detection in Intensive Pig Farming"@en ;
+    schema:author <https://orcid.org/0000-0001-7358-6434> ; # Miha Lavric
+    schema:datePublished "2021-12-21"^^xsd:date ;
+    schema:publisher "MDPI" ;
+    eurio:url "https://doi.org/10.3390/agriculture12010002"^^xsd:anyURI ;
+    eurio:isResultOf <https://amilab.nl/projects/digipig> .
+
+# 2017 E-PLM 2.0 (Extended Product Lifecycle Management 2.0)
+<https://linkedopendata.eu/entity/Q3989242> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2017 More — SMEs and Cybersecurity in Smart Industry: Realising Revenues
+<https://linkedopendata.eu/entity/Q3989191> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2017 KiC - Kunstwerken in Control
+<https://linkedopendata.eu/entity/Q3989234> a eurio:Project ;
+    eurio:identifier "OP-2014-2023-Oost-PROJ-00707" ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "KiC"@nl ;
+        eurio:definition "Kunstwerken in Control"@nl
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2017 Autonomous Indoor  Outdoor SafetyTracking system
+<https://doi.org/10.3030/776425> a eurio:Project ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "AIOSAT"@en ;
+        eurio:definition "Autonomous Indoor Outdoor Safety Tracking"@en
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+<https://doi.org/10.5281/zenodo.3776104> a schema:Poster ;
+    schema:name "AIOSAT poster for ICT Open 2019"@en ;
+    schema:url "https://doi.org/10.5281/zenodo.3776104"^^xsd:anyURI ;
+    eurio:isResultOf <https://doi.org/10.3030/776425> .
+
+# 2018 Wat werkt voor wie in arbeidsfysiotherapie – ondersteuning bij advisering voor duurzame inzetbaarheid
+<https://www.nwo.nl/projecten/023011076-0> a eurio:Project ;
+    eurio:identifier "023.011.076" ;
+    eurio:startDate "2018-08-01"^^xsd:date ;
+    eurio:endDate "2024-05-13"^^xsd:date ;
+    eurio:title "Wat werkt voor wie in arbeidsfysiotherapie – ondersteuning bij advisering voor duurzame inzetbaarheid"@nl ;
+    eurio:title "What works for whom in occupational physiotherapy - decision support system for sustained employability"@en ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+<https://doi.org/10.1007/s10926-020-09895-x> a schema:ScholarlyArticle ;
+    schema:name "Ethical Considerations of Using Machine Learning for Decision Support in Occupational Health: An Example Involving Periodic Workers’ Health Assessments" ;
+    schema:author <https://orcid.org/0000-0003-2368-4970> ; # Etto
+    eurio:doi "10.1007/s10926-020-09895-x" ;
+    schema:datePublished "2020-06-04"^^xsd:date ;
+    schema:publisher "Springer" ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/023011076-0> .
+
+# 2018 Epy Drost as a Living Lab
+<https://www.nwo.nl/projecten/hbopd201801002-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2018 Dijkgravers in beeld    
+<https://www.nwo.nl/projecten/raakpub04054-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2018 Big data technologie voor detectie overbelasting sporters
+<https://www.nwo.nl/projecten/raakpub04022-0> a eurio:Project ;
+    eurio:identifier "RAAK.PUB04.022" ;
+    eurio:title "Big data technologie voor detectie overbelasting sporters"@nl ;
+    eurio:startDate "2018-02-01"^^xsd:date ;
+    eurio:endDate "2020-11-30"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q649163 # Hanzehogeschool
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q11961 # Heracles Almelo
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q24711 # FC Groningen
+    ] ;
+    eurio:url "https://www.sia-projecten.nl/project/big-data-technologie-voor-detectie-overbelasting-sporters"^^xsd:anyURI .
+
+# 2018 Monitoring animal behaviour, animal health and animal welfare (x3D)
+<https://linkedopendata.eu/entity/Q3989300> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "x3D"@nl ;
+        eurio:definition " Monitoren van diergedrag, diergezondheid en dierenwelzijn"@nl
+    ] .
+<https://techforfuture.nl/project/1807> a eurio:Project ;
+    eurio:identifier "1807" ;
+    eurio:title "Event Information System Military Boekelo"@nl ;
+    eurio:startDate "2018-09-01"^^xsd:date ;
+    eurio:endDate "2020-09-01"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q2622712 # RTV Oost
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q3913196 # Thales Nederland
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q138660674 # Military Boekelo-Enschede
+    ] .
+
+<https://youtu.be/YlNbzkTnhcU> a schema:Clip ;
+    schema:name "Military 2019 Event Information System" ;
+    schema:url "https://youtu.be/YlNbzkTnhcU"^^xsd:anyURI ;
+    eurio:isResultOf <https://techforfuture.nl/project/1807> .
+
+# 2019 FireBot
+<https://www.nwo.nl/projecten/raakpub05010-0>
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2019 Next Generation Navigation (NeNa)
+<https://www.nwo.nl/projecten/raakmkb09011-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "NeNa"@en ;
+        eurio:definition "Next Generation Navigation"@en
+    ] .
+
+# 2019 Focus on Vision
+<https://www.nwo.nl/projecten/raakmkb10005-0> a eurio:Project ;
+    eurio:identifier "RAAK.MKB10.005" ;
+    eurio:title "Focus op Vision"@nl ;
+    eurio:title "Focus on Vision"@en ;
+    eurio:startDate "2019-09-01"^^xsd:date ;
+    eurio:endDate "2023-01-06"^^xsd:date ;
+    eurio:url "https://www.sia-projecten.nl/project/focus-op-vision"^^xsd:anyURI ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q56682998 # NHL Stenden
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q138341924 # Riwo Engineering
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q97069527 # Malvern Panalytical
+    ] .
+
+# 2019 HiTex
+<https://www.nwo.nl/projecten/raakpro03001-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:identifier "RAAK.PRO03.001" .
+
+<https://doi.org/10.3390/engproc2023052016> a schema:ScholarlyArticle ;
+    schema:name "Weaving Together Disciplines: Service Blueprinting for Multidisciplinary E-Textile Design"@en ;
+    schema:author <https://orcid.org/0000-0002-6605-4998> ; # Javier
+    schema:datePublished "2024-01-18"^^xsd:date ;
+    schema:publisher "MDPI" ;
+    schema:url "https://doi.org/10.3390/engproc2023052016"^^xsd:anyURI ;
+    eurio:doi "10.3390/engproc2023052016" ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/raakpro03001-0> .
+
+# 2019 Digitalisering bovenleidingen en draagconstructies
+<https://techforfuture.nl/project/2019> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q98797715 # Strukton Rail
+    ] .
+
+<https://doi.org/10.3390/s23010222> a schema:ScholarlyArticle ;
+    schema:name "Semantic Segmentation of Terrestrial Laser Scans of Railway Catenary Arches: A Use Case Perspective"@en ;
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; #Bram
+    schema:author <https://orcid.org/0000-0002-2760-6892> ; # Faizan
+    schema:author <https://orcid.org/0000-0002-2626-1837> ; # Jeroen
+    schema:datePublished "2022-12-26"^^xsd:date ;
+    schema:publisher "MDPI" ;
+    schema:url "https://doi.org/10.3390/s23010222"^^xsd:anyURI ;
+    eurio:doi "10.3390/s23010222" ;
+    eurio:isResultOf <https://techforfuture.nl/project/2019> ,
+                     <https://www.nwo.nl/projecten/nwa116018238> .
+
+# 2019 PrimaVera project
+<https://www.nwo.nl/projecten/nwa116018238> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "PrimaVera"@en ;
+        eurio:definition "Predictive maintenance for Very effective asset management"@en
+    ] .
+
+<https://doi.org/10.3990/1.9789036561990> a schema:Thesis ;
+    schema:name "Point taken: Translating the physical rail domain to cyber space using point clouds from mobile laser scanning"@en ;
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram Ton
+    schema:url "https://doi.org/10.3990/1.9789036561990"^^xsd:anyURI ;
+    schema:inSupportOf "PhD" ;
+    eurio:isResultOf <https://techforfuture.nl/project/2019>,
+                     <https://www.nwo.nl/projecten/nwa116018238>,
+                     <https://techforfuture.nl/project/2207> .
+
+<https://doi.org/10.3390/app10238348> a schema:ScholarlyArticle ;
+    schema:name "PrimaVera: Synergising Predictive Maintenance"@en ;
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter
+    schema:url "https://doi.org/10.3390/app10238348"^^xsd:anyURI ;
+    schema:datePublished "2020-11-24"^^xsd:date ;
+    schema:publisher "MDPI" ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/nwa116018238> .
+
+<https://youtu.be/uRjP_AhVTwk> a schema:Clip ;
+    schema:name "Bram Ton promoveert: voorspelbaar spooronderhoud" ;
+    schema:actor <https://orcid.org/0000-0002-9525-5633> ; # Bram Ton
+    schema:url "https://youtu.be/uRjP_AhVTwk"^^xsd:anyURI ;
+    eurio:isResultOf <https://techforfuture.nl/project/2019>,
+                     <https://www.nwo.nl/projecten/nwa116018238>,
+                     <https://techforfuture.nl/project/2207> .
+
+<https://doi.org/10.5281/zenodo.17747215> a schema:ScholarlyArticle ;
+    schema:name "Automated Detection and Tracking of Sewer Pipeline Structural Elements"@en ;
+    schema:url "https://doi.org/10.5281/zenodo.17747215"^^xsd:anyURI ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/nwa116018238> .
+    
+<https://doi.org/10.1007/978-3-032-15638-9_24> a schema:ScholarlyArticle ;
+    schema:name "SPAX: A Shapley-Based Point Attribution eXplanation for Interpreting 3D Point Cloud Classification"@en ;
+    schema:author <https://orcid.org/0009-0000-8042-8071> ; # Marc Harinck
+    schema:author <https://orcid.org/0000-0001-8951-4320> ; # Muhammad Shoaib Sarwar
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram Ton
+    schema:author <https://orcid.org/0000-0002-2760-6892> ; # Faizan Ahmed
+    schema:datePublished "2026-02-11"^^xsd:date ;
+    schema:publisher "Springer" ;
+    schema:url "https://doi.org/10.1007/978-3-032-15638-9_24"^^xsd:anyURI ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/nwa116018238> .
+
+<https://doi.org/10.3390/telecom5020019> a schema:ScholarlyArticle ;
+    schema:name "Emerging Industrial Internet of Things Open-Source Platforms and Applications in Diverse Sectors"@en ;
+    schema:author <https://orcid.org/0000-0001-6156-6815> ; # Eyuel
+    schema:author <https://orcid.org/0000-0002-1909-9763> ; # Wouter
+    schema:author <https://orcid.org/0000-0002-6605-4998> ; # Javier
+    schema:author <https://orcid.org/0000-0002-2850-4265> ; # Ghayoor Gillani
+    schema:datePublished "2024-05-14"^^xsd:date ;
+    schema:publisher "MDPI" ;
+    schema:url "https://doi.org/10.3390/telecom5020019"^^xsd:anyURI ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/nwa116018238> .
+    
+<https://doi.org/10.5281/zenodo.20607434> a schema:Poster ;
+    schema:name "Improving point cloud annotation efficiency using unsupervised over-segmentation"@en ;
+    schema:author <https://orcid.org/0009-0004-6073-4820> ; # Mikus
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram Ton
+    schema:author <https://orcid.org/0000-0003-4464-1603> ; # Danny
+    schema:url "https://doi.org/10.5281/zenodo.20607434"^^xsd:anyURI ;
+    eurio:doi "10.5281/zenodo.20607434" ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/nwa116018238> .
+
+# 2019 Flywheel technology for energy storage in microgrids
+<https://linkedopendata.eu/entity/Q3989322> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2019 SpiroPlay
+<https://amilabl.nl/projects/spiro-play> a eurio:Project ;
+    eurio:title "SpiroPlay (Steering into the flow) - Gamified spirometrie voor het thuismonitoren van kinderen met astma."@nl ;
+    eurio:identifier "spiro" ;
+    eurio:startDate "2019-07-31"^^xsd:date ; # day months are guessed
+    eurio:endDate "2020-07-31"^^xsd:date ; # day months are guessed
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/spiroplay-steering-into-the-flow-gamified-spirometrie-voor-het-thuismonitoren-van-kinderen-met-astma"^^xsd:anyURI ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/pihc>
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "lead-applicant"@en ;
+        eurio:isRoleOf wd:Q1547084 # University of Twente
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q2203146 # Deventer Ziekenhuis
+    ] ;    
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q97496873 # MST
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf <https://amilab.nl/lod/organisation/gamelab-oost> # Gamelab Oost
+    ] .
+
+<https://doi.org/10.1145/3410404.3414223> a schema:ScholarlyArticle ;
+    schema:name "SpiroPlay, a Suite of Breathing Games for Spirometry by Kids & Experts"@en ;
+    schema:author <https://orcid.org/0000-0003-4464-1603> ; # Danny
+    schema:url "https://doi.org/10.1145/3410404.3414223"^^xsd:anyURI ;
+    schema:datePublished "2020-11-03"^^xsd:date ;
+    schema:publisher "ACM" ;
+    eurio:doi "10.1145/3410404.3414223" ;
+    eurio:isResultOf <https://amilabl.nl/projects/spiro-play> .
+
+# 2020 AIoTValley
+<https://www.nwo.nl/projecten/topup09019> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2020 Ontwerpen voor het Internet of Things
+<https://www.nwo.nl/projecten/raakmkb12021> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2020 Open Source Load Monitor
+<https://www.nwo.nl/projecten/topup09018> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2020 Nieuwe generatie Balansmonitor
+<https://www.nwo.nl/projecten/kiemk2001047> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2020 Instantaneous montoring and coaching of movement and balance in physiotherapy
+<https://linkedopendata.eu/entity/Q3989334> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2020 Expressure
+<https://linkedopendata.eu/entity/Q3989313> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2020 Scania ROFA Uptime improvement - III
+<https://techforfuture.nl/project/2004> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q219960 # Scania
+    ] .
+
+# 2021 AI-supported sensor systems for improving and competitive grading of horse and (disabled) rider bio-mechanical interaction
+<https://www.nwo.nl/projecten/kiemk2001126> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2021 Post-corona stadionbezoek
+<https://www.nwo.nl/projecten/kiemk2101054> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2021 Automatische gesprekken t.b.v. optimale stadionbezetting
+<https://www.nwo.nl/projecten/kiemk2001142> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2021 Smart Connected Bikes - enjoyable, safe, reliable, and comfortable
+<https://www.nwo.nl/projecten/18006> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q338732 # Accell group
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1547084 # University of Twente
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1867222 # TNO
+    ] ;    
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q752663 # TU Delft
+    ] .
+    
+<https://doi.org/10.1016/j.jcmr.2024.100051> a schema:ScholarlyArticle ;
+    schema:name "How do cyclists experience a context-aware prototype warning system? Assessing perceived safety, perception and riding behaviour changes through a field study"@en ;
+    schema:datePublished "2024-12-06"^^xsd:date ;
+    schema:author <https://orcid.org/0009-0004-9322-0674> ; # Annemarie Jutte
+    schema:url "https://doi.org/10.1016/j.jcmr.2024.100051"^^xsd:anyURI ;
+    schema:publisher "Elsevier" ;
+    eurio:doi "10.1016/j.jcmr.2024.100051" ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/18006> .
+
+# 2021 Research group for Digital Driven Manufacturing (SPRONG)
+<https://www.nwo.nl/projecten/spralg01002> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2021 SaxShoe
+<https://www.nwo.nl/projecten/2015-03-04m-0> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2021 Sustainable energy system for achieving novel carbon neutral energy communities (SUSTENANCE)
+<https://doi.org/10.3030/101022587> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "SUSTENANCE"@en ;
+        eurio:definition "Sustainable energy system for achieving novel carbon neutral energy communities"@en 
+    ] .
+
+<https://doi.org/10.3390/s24030854> a schema:ScholarlyArticle ;
+    schema:name "Enhancing Cybersecurity in Distributed Microgrids: A Review of Communication Protocols and Standards"@en ;
+    schema:author <https://orcid.org/0000-0001-6156-6815> ; # Eyuel
+    schema:author <https://orcid.org/0000-0002-6605-4998> ; # Javier
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Wouter
+    schema:datePublished "2024-01-28"^^xsd:date ;
+    schema:publisher "MDPI" ;
+    schema:url "https://doi.org/10.3390/s24030854"^^xsd:anyURI ;
+    eurio:doi "10.3390/s24030854" ;
+    eurio:isResultOf <https://doi.org/10.3030/101022587> .
+    
+# 2021 Sustainable and Integrated Energy Systems in Local Communities (SERENE)
+<https://doi.org/10.3030/957682> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "SERENE"@en ;
+        eurio:definition "Sustainable and Integrated Energy Systems in Local Communities"@en 
+    ] .
+
+# 2021 Smart Groundwater Sensing
+<https://techforfuture.nl/project/2103> a eurio:Project ;
+    eurio:identifier "2103" ;
+    eurio:title "Smart Groundwater Sensing"@en ;
+    eurio:startDate "2021-02-01"^^xsd:date ;
+    eurio:endDate "2022-06-30"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "lead"@en ;
+        eurio:isRoleOf <https://www.saxion.nl/onderzoek/lectoraten/applied-nanotechnology> ;
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q2494325 ; # Antea Group
+    ] ;
+    eurio:url "https://techforfuture.nl/project/2103/"^^xsd:anyURI .
+
+<https://youtu.be/Ehu7RXQyCVk> a schema:Clip ;
+    schema:name "TFF Smart Groundwater Sensing"@en ;
+    eurio:isResultOf <https://techforfuture.nl/project/2103> .
+    
+# 2022 Agent Based Modelling for Archaeologists
+<https://amilab.nl/projects/agent-based-modelling-archaeologists> a eurio:Project ;
+    eurio:title "Agent Based Modelling for Archaeologists" ;
+    eurio:identifier "2021-2-IE01-KA220-VET-000049054" ;
+    eurio:startDate "2022-04-01"^^xsd:date ;
+    eurio:endDate "2024-03-31"^^xsd:date ;
+    eurio:url "https://erasmus-plus.ec.europa.eu/nl/projects/search/details/2021-2-IE01-KA220-VET-000049054"^^xsd:anyURI ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+       a eurio:OrganisationRole;
+       eurio:roleLabel "coordinator"@en ;
+       eurio:isRoleOf wd:Q95854482
+    ] ;
+    eurio:hasInvolvedParty [
+       a eurio:OrganisationRole;
+       eurio:roleLabel "participant"@en ;
+       eurio:isRoleOf wd:Q2104082 # Saxion
+    ] ;
+    eurio:hasInvolvedParty [
+       a eurio:OrganisationRole;
+       eurio:roleLabel "participant"@en ;
+       eurio:isRoleOf wd:Q924265 # Aarhus university Denmark
+    ] ;
+    eurio:hasInvolvedParty [
+       a eurio:OrganisationRole;
+       eurio:roleLabel "participant"@en ;
+       eurio:isRoleOf wd:Q752663 # Delft university of technology
+    ] .
+    
+<https://doi.org/10.5334/jcaa.241> a schema:ScholarlyArticle ;
+    schema:name "Lessons Learned: Creating Tutorials to Teach Agent-Based Modelling to Archaeologists"@en ;
+    schema:datePublished "2025-12-30"^^xsd:date ;
+    schema:url "https://doi.org/10.5334/jcaa.241"^^xsd:anyURI ;
+    eurio:doi "10.5334/jcaa.241" ;
+    schema:author <https://orcid.org/0000-0001-6966-1729> ; # Ronald Visser
+    schema:author <https://orcid.org/0009-0004-9322-0674> ; # Annemarie Jutte
+    schema:author <https://orcid.org/0000-0002-2626-1837> ; # Jeroen Linssen
+    eurio:isResultOf <https://amilab.nl/projects/agent-based-modelling-archaeologists> .
+
+# 2022 Boeren, burgers en buitenbeesten
+<https://www.nwo.nl/projecten/raakpro04101> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "BBB"@nl ;
+        eurio:definition "Boeren, Burgers en Buitenbeesten"@nl 
+    ] .
+
+# 2022 Rots in de Brand
+<https://www.nwo.nl/projecten/raakpub09032> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2022 OBSeRVeD
+<https://www.nwo.nl/projecten/nwa138920123> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "OBSeRVeD"@en ;
+        eurio:definition "Odour Based Selective Recognition of Veterinary Diseases"@en
+    ] .    
+
+# 2022 CLIC-IT: Communities of Learning and Innovation in ICT to accelerate digital transformation
+<https://www.nwo.nl/projecten/kich1hc0120006> a eurio:Project ;
+   eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2022 Grip op herstel bij de fysio
+<https://www.nwo.nl/projecten/gocikiem01093> a eurio:Project ;
+   eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2022 TEchnoLogiE MArkeert de Palliatieve fase (TELEMAP)
+<https://www.nwo.nl/projecten/raakpub09006> a eurio:Project ;
+   eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+   
+# 2022 Healthy Loading to combat osteoarthritis: Leveraging molecular variations in load bearing capacity for individualized movement aDvice: The LoaD project
+<https://www.nwo.nl/projecten/nwa138920009> a eurio:Project ;
+   eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2022 Stelsel B&B
+<https://amilab.nl/project/stelsel-b-b> a eurio:Project ;
+    eurio:title "Stelsel B&B (bewaken en beveiligen)"@nl ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:isDisbursedBy <wd:Q2797139> # Politieacademie
+    ] ;
+    eurio:startDate "2022-05-01"^^xsd:date ;
+    eurio:endDate "2024-01-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q2797139 ; # Politieacademie
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf <https://saxion.nl/tci> ; # Lectoraat Technologies for Criminal Investigations 
+    ] ;    
+    eurio:abstract "Politici, advocaten en getuigen van misdrijven worden in Nederland en wereldwijd bedreigd door criminelen en hebben daarom, tijdelijk of permanent, persoonlijke bescherming nodig van de politie. Het aantal ‘te beveiligen personen’ neemt de laatste jaren ook nog eens toe, dit zorgt voor extra druk.  Binnen dit project wordt onderzocht hoe de monitoringscentrale bewaken en beveiligen (MBB) efficiënter zou kunnen werken. Bijvoorbeeld door de aandacht te laten trekken naar bewegende beelden, maar ook door het detecteren van afwijkend gedrag. Voor de detectie van afwijkend gedrag wordt onderzoek gedaan met behulp van ‘The green village’ in Delft. Hier wordt een sensing lab opgericht. Saxion werkt hierin samen met andere kennisinstellingen en studenten om de efficiëntie van het stelsel bewaken en beveiligen te vergroten. Met gebruik van deep learning wordt een ​​model ontwikkeld om verschillende objecten te kunnen classificeren met als resultaat werkende prototype van het algoritme."@nl ;
+    eurio:url "https://www.saxion.nl/onderzoek/smart-industry/ambient-intelligence/stelsel-bb-bewaken-en-beveiligen"^^xsd:anyURI .
+
+# 2022 Digital twinning voor spoorontwerp
+<https://techforfuture.nl/project/2207> a eurio:Project ;
+    eurio:title "Digital Twinning voor Spoorontwerp"@nl;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "DTspoor"@nl ;
+        eurio:definition "Digital Twinning voor spoortontwerp"@nl
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q98797715 # Strukton Rail
+    ] ;
+    eurio:url "https://techforfuture.nl/project/2207/"^^xsd:anyURI .
+
+<https://doi.org/10.1109/ACCESS.2025.3590779> a schema:ScholarlyArticle ;
+    schema:name "Large Scale Asset Detection Within Railway Scene Point Cloud Data From Mobile Laser Scanning"@en ;
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram
+    schema:datePublished "2025-07-21"^^xsd:date ;
+    schema:publisher "IEEE" ;
+    schema:url "https://doi.org/10.1109/ACCESS.2025.3590779"^^xsd:anyURI ;
+    eurio:doi "10.1109/ACCESS.2025.3590779" ;
+    eurio:isResultOf <https://techforfuture.nl/project/2207> ,
+                     <https://www.nwo.nl/projecten/nwa116018238> .
+
+<https://doi.org/10.1109/ICVR62393.2024.10868576> a schema:ScholarlyArticle ;
+    schema:name "Immersive visualisation of point cloud data of railway environments"@en ;
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram
+    schema:author <https://orcid.org/0000-0003-4464-1603> ; # Danny
+    schema:datePublished "2025-02-07"^^xsd:date ;
+    schema:publisher "IEEE" ;
+    schema:url "https://doi.org/10.1109/ICVR62393.2024.10868576"^^xsd:anyURI ;
+    eurio:doi "10.1109/ICVR62393.2024.10868576" ;
+    eurio:isResultOf <https://techforfuture.nl/project/2207> ,
+                     <https://www.nwo.nl/projecten/nwa116018238> .
+
+<https://youtu.be/fhBUw1Pv77s> a schema:Clip ;
+    schema:name "Digital Twinning voor Spoorontwerp" ;
+    schema:actor <https://orcid.org/0000-0002-9525-5633> ; # Bram Ton
+    schema:url "https://youtu.be/fhBUw1Pv77s"^^xsd:anyURI ;
+    eurio:isResultOf <https://techforfuture.nl/project/2207> .
+
+# 2022 Parametrische zorg
+<https://techforfuture.nl/project/2212> a eurio:Project ;
+    eurio:title "Parametrische zorg"@nl;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q97496873 # MST
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q50038575 # Atos Medical
+    ] ;    
+    eurio:url "https://techforfuture.nl/project/2212/"^^xsd:anyURI .
+
+<https://youtu.be/FfiSMHIRoLI> a schema:Clip ;
+    schema:name "TechForFuture Parametrische zorg"@nl ;
+    eurio:isResultOf <https://techforfuture.nl/project/2212> .
+
+<https://doi.org/10.1101/2025.11.27.25341143> a schema:ScholarlyArticle ;
+    schema:name "Automated Tracheal Morphometrics Using Deep Learning: Toward Custom Tracheostomy Tubes"@en ;
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram Ton
+    schema:author <https://orcid.org/0009-0009-6304-3773> ; # Jelmer Veenstra
+    eurio:isResultOf <https://techforfuture.nl/project/2212> .
+
+<https://doi.org/10.1136/bmjinnov-2026-001561> a schema:ScholarlyArticle ;
+    schema:name "Automated human tracheal morphometrics using deep learning: toward custom tracheostomy tubes"@en ;
+    schema:author <https://orcid.org/0000-0002-9525-5633> ; # Bram Ton
+    schema:author <https://orcid.org/0009-0009-6304-3773> ; # Jelmer Veenstra TODO: Sally, maar heeft geen orcid
+    schema:url "https://doi.org/10.1136/bmjinnov-2026-001561>"^^xsd:anyURI ;
+    eurio:doi "10.1136/bmjinnov-2026-001561" ;
+    schema:publisher "BMJ Group" ;
+    schema:datePublished "2026-06-01"^^xsd:date ;
+    eurio:isResultOf <https://techforfuture.nl/project/2212> .
+
+# 2023 Data Engineering and Management in Dataketens | DEMAND
+<https://www.nwo.nl/projecten/spralg02015> a eurio:Project ;
+   eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2023 Borging van vakkennis in de maakindustrie met Augmented Reality.
+<https://www.nwo.nl/projecten/raakmkb18013> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+<https://doi.org/10.1145/3733155.3734902> a schema:ScholarlyArticle ;
+    schema:name "Knowledge retention through cognitive support technology (CST) in the manufacturing industry: A process inventory"@en ;
+    schema:author <https://orcid.org/0009-0000-5505-4530> ; # Selin
+    schema:author <https://orcid.org/0000-0003-4464-1603> ; # Danny
+    schema:author <https://orcid.org/0000-0003-2368-4970> ; # Etto
+    schema:datePublished "2025-07-17"^^xsd:date ;
+    schema:publisher "ACM" ;
+    eurio:isResultOf <https://www.nwo.nl/projecten/raakmkb18013> .
+
+# 2023 ZORRO: Engineering for Zero Downtime in Cyber-Physical Systems via Intelligent Diagnostics
+<https://www.nwo.nl/projecten/kich1st0221003> a eurio:Project ;
+    eurio:url "https://www.nwo.nl/projecten/kich1st0221003"^^xsd:anyURI ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2023 Barriers for the successful deployment of rehabilitation games
+<https://www.nwo.nl/projecten/gocikiem02048> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2023 Trainingsbelasting op het veld
+<https://www.nwo.nl/projecten/kiemk2301105> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2023 Fysiotherapie op Afstand
+<https://www.nwo.nl/projecten/raakmkb18004> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+    
+# 2023 NOWATT
+<https://www.nwo.nl/projecten/raakmkb17019> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2023 CDKM Deventer 2023-2026: Samen leren, samen innoveren
+<https://www.nwo.nl/projecten/cdkmgr07004> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2023 XAIDHA Explainable AI voor de Digitale Hulpmiddelen-Assistent
+<https://techforfuture.nl/project/2309> a eurio:Project ;
+    eurio:identifier "2309" ;
+    eurio:title "Explainable AI voor de Digitale Hulpmiddelen-Assistent"@nl ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "XAIDHA"@nl ;
+        eurio:definition "Explainable AI voor de Digitale Hulpmiddelen-Assistent"@nl
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1479312 ; # Nedap
+    ] .
+
+<https://youtu.be/errnmVeI354> a schema:Clip ;
+    schema:name "TechForFuture NEDAP" ;
+    schema:actor <https://orcid.org/0009-0007-4266-1607> ; # Iris Heerlien
+    schema:url "https://youtu.be/errnmVeI354"^^xsd:anyURI ;
+    eurio:isResultOf <https://techforfuture.nl/project/2309> .
+
+# 2024 GRASS
+<https://doi.org/10.61686/REBXS74843> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2024 XR at IC
+<https://www.nwo.nl/projecten/kiemk2301132> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2024 project Adaptieve Technologie voor een beter Zorgpad (AdapT-Zorg)
+<https://doi.org/10.61686/AYBZU45817> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> .
+
+# 2024 VAIBO: Verantwoorde AI bij organisaties
+<https://amilab.nl/project/vaibo> a eurio:Project ;
+    eurio:title "VAIBO: Verantwoorde AI bij organisaties"@nl ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "VAIBO"@nl ;
+        eurio:definition "Verantwoorde AI bij organisaties"@nl 
+    ] ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:isDisbursedBy <wd:Q2104082> # Saxion
+    ] ;
+    eurio:startDate "2024-01-01"^^xsd:date ;
+    eurio:endDate "2024-12-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1479312 ; # Nedap
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q18655593 ; # Politie Oost-Nederland
+    ] ;
+    eurio:abstract "Dit onderzoeksproject verkent de impact van de implementatie van Artificiële Intelligentie (AI) in organisaties, met een focus op twee cruciale sectoren: gezondheidszorg en veiligheid. Het primaire doel is het uitvoeren van een verkennend onderzoek naar hoe bedrijven AI-technologieën integreren in hun werkprocessen en besluitvormingskaders.\nHet onderzoek beoogt kritische aspecten van AI-adoptie te begrijpen, waaronder: hoe organisaties hun data beheren, beslissingen nemen over personeelsondersteuning door AI, implementatievoorwaarden voor AI-tools vaststellen en ervoor zorgen dat medewerkers AI gebruiken als ondersteunend instrument in plaats van het blindelings te volgen. Het project zal gevalsstudies uitvoeren bij twee organisaties (Nedap Health en Politie Oost-Nederland) die zich in verschillende stadia van AI-implementatie bevinden.\nCentrale onderzoeksvragen omvatten het onderzoeken van verantwoord AI-gebruik, het begrijpen van de balans tussen technologische ondersteuning en menselijke expertise, en het identificeren van voorwaarden die AI zowel uitvoerbaar als verklaarbaar maken. Het uiteindelijke doel is inzichten te ontwikkelen die organisaties kunnen helpen AI op een verantwoorde manier in hun werkprocessen te integreren, waarbij kritisch menselijk oordeelsvermogen en ethische overwegingen behouden blijven."@nl ;
+    eurio:url "https://www.saxion.nl/onderzoek/overige-projecten/ambient-intelligence/vaibo-verantwoorde-ai-bij-organisaties"^^xsd:anyURI .
+
+# 2025 GranML - Machine Learning for Granular Materials Industry
+<https://doi.org/10.61686/ZGTCO44457> a eurio:Project ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q592327 ; # Anton Paar GmbH
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1547084 ; # University of Twente
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q138346612 ; # MercuryLab
+    ] .
+
+# 2025 Ankle ReLoad
+<https://amilab.nl/projects/ankle-reload> a eurio:Project ;
+    eurio:title "Ankle ReLoad"@en ;
+    eurio:identifier "12178" ;
+    eurio:startDate "2025-10-01"^^xsd:date ;
+    eurio:endDate "2029-09-30"^^xsd:date ;
+    eurio:url "https://deutschland-nederland.eu/en/projects/ankle-reload/"^^xsd:anyURI ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/interreg>
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "lead-applicant"@en ;
+        eurio:isRoleOf wd:Q1875661 # Roessingh
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q911561 # Hannover Medical School
+    ] ;    
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q97496873 # MST
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q97111891 # Sint Maartenskliniek
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q2104082 # Saxion
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q168426 # University of Münster
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1547084 # University of Twente
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q2218121 # Ziekenhuisgroep Twente
+    ] ;
+    eurio:abstract "Annually, approximately 105,000 patients are treated for an ankle fracture in the Netherlands and Germany, with a large proportion of patients aged between 35 and 65 years. Besides impacting the personal lives of these patients, this also leads to additional societal costs due to absenteeism. The recovery of these fractures has been shown to be more effective when the joint is actively loaded. However, it is still unclear what the optimal ankle load is to promote recovery, as too much load can even be harmful and prolong the recovery process. Determining ankle load has so far only been possible in laboratory conditions due to the required complex measuring equipment. This means that individual patients and their specialists do not have insight into how the joint is loaded during the recovery period at home. The goal of this project is to develop a demonstrator that is able to measure ankle load at home through a ambulatory measurement system with a minimal amount of sensors. This demonstrator will provide feedback to the patient and the healthcare professionals via a digital application. First, the ankle load is determined very accurately through lab based measurements for a large number of patients. In the same measurements, data will be gathered with the ambulatory measurement system with a minimal number of sensors. By applying machine learning methods to the combined data from the lab system and the minimal sensing system,  the sensing system can be trained to determine ankle load from its limited sensors set. Continuous monitoring and interpretation of the individual load pattern at home can then be performed to study and guide optimization of the recovery process. In addition, innovative next-generation methods for measuring body movement and external load will be developed required for a consistently high data quality in future large-scale applications."@en .
+    # TODO: GEBIOM GmbH, Movella Technologies B.V., Predimo GmbH, Zentrum für ambulante Rehabilitation
+
+# 2025 Autonome Volumeschatting voor Veevoer
+<https://techforfuture.nl/project/2511> a eurio:Project ;
+    eurio:identifier "2511" ;
+    eurio:title "Autonome Volumeschatting voor Veevoer"@nl ;
+    eurio:title "Autonomous volume estimation of animal feed"@en ;
+    eurio:startDate "2025-04-01"^^xsd:date ;
+    eurio:endDate "2025-12-31"^^xsd:date ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "lead"@en ;
+        eurio:isRoleOf <https://saxion.nl/smart> ; # Saxion - SMART
+    ] ;    
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q15883049 ; # Trioliet
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q138341924 ; # RIWO
+    ] ;
+    eurio:url "https://techforfuture.nl/project/autonome-volumeschatting/"^^xsd:anyURI .
+
+# 2026 ORION
+<https://amilab.nl/projects/orion> a eurio:Project ;
+    eurio:identifier "12231" ;
+    eurio:title "ORION"@en ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "ORION"@en ;
+        eurio:definition "Occlusion Recanalization with Intelligent Optical Navigation"@en
+    ] ;    
+    eurio:startDate "2026-02-01"^^xsd:date ;
+    eurio:endDate "2029-01-31"^^xsd:date ;
+    eurio:url "https://deutschland-nederland.eu/en/projects/orion/"^^xsd:anyURI ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/interreg>
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "lead-applicant"@en ;
+        eurio:isRoleOf wd:Q168426 # Universität Münster
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q4886950 # Benchmark Electronics
+    ] ;    
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q554425 # FH Münste
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q138573863 # Flux Robotics
+    ] ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q1748138 # Universitätsklinikum Münster
+    ] .
+    # TODO: beemo GmbH https://www.beemo.eu
+
+# 2026 APOLLO
+<https://amilab.nl/projects/apollo> a eurio:Project ;
+    eurio:title "APOLLO"@en ;
+    eurio:startDate "2026-01-01"^^xsd:date ;
+    eurio:endDate "2026-12-31"^^xsd:date ;
+    eurio:hasAcronym [
+        a eurio:Acronym ;
+        eurio:shortForm "APOLLO"@en ;
+        eurio:definition "AI-guided Precision Operation for LocaLization and Optimization"@en
+    ] ;    
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/hht>
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q138573863 # Flux Robotics
+    ] .
+# 2026 FiberFact
+<https://amilab.nl/projects/orion> a eurio:Project ;
+    eurio:title "FiberFact"@en ;
+    eurio:startDate "2026-02-01"^^xsd:date ;
+    eurio:endDate "2029-06-30"^^xsd:date ;
+    eurio:url "https://deutschland-nederland.eu/de/projects/fiberfact/"^^xsd:anyURI ;
+    eurio:isFundedBy [
+        a eurio:Grant;
+        eurio:hasFundingScheme <https://amilab.nl/lod/scheme/interreg>
+    ] ;
+    eurio:hasInvolvedParty <https://amilab.nl/ami-role-participant> ;
+    eurio:hasInvolvedParty [
+        a eurio:OrganisationRole ;
+        eurio:roleLabel "participant"@en ;
+        eurio:isRoleOf wd:Q554425 # FH Münster
+    ] .
+
+### Funding schemes
+<https://amilab.nl/lod/scheme/interreg> a eurio:FundingScheme ;
+    eurio:identifier "2021TC16RFCB022" ; # CCI
+    eurio:title "Interreg VI-A Germany-The Netherlands"@en ;
+    eurio:url "https://ec.europa.eu/regional_policy/in-your-country/programmes/2021-2027/nl/2021tc16rfcb022_en"^^xsd:anyURI .
+
+<https://amilab.nl/lod/scheme/nwo-demonstrator> a eurio:FundingScheme ;
+    eurio:title "Demonstrator" ;
+    eurio:isImplementedBy <wd:Q129724> .
+
+<https://amilab.nl/lod/scheme/pihc> a eurio:FundingScheme ;
+    eurio:title "Pioneers in Health Care Innovatiefonds" .
+    
+<https://amilab.nl/lod/scheme/hht> a eurio:FundingScheme ;
+    eurio:title "PPS-i TKI HTSM Medical Technology" ;
+    eurio:isImplementedBy <wd:Q138655109> .
+
+### Organisations
+<https://amilab.nl/lod/organisation/gamelab-oost> a eurio:Organisation ;
+    rdfs:label "Gamelab Oost"@nl ;
+    eurio:legalName "Stichting Gamelab Oost"@nl ;
+    eurio:identifier "71243461" ;
+    eurio:url "https://gamelaboost.nl"^^xsd:anyURI .
+
+### Output
+<https://doi.org/10.5281/zenodo.18671003> a schema:Thesis;
+    schema:name "Insights into Academic Output of Universities of Applied Sciences using Linked Open Data"@en ;
+    schema:author <https://orcid.org/0000-0001-6054-7997> ; # Thiago Albrecht Salviano
+    schema:inSupportOf "Bachelor" .
+
+<https://youtu.be/fKnpX3nI4ds> a schema:Clip ;
+    schema:name "TFF - Scania: Predictive maintenance" ;
+    schema:url "https://youtu.be/fKnpX3nI4ds"^^xsd:anyURI ;
+    schema:actor <https://orcid.org/0000-0001-6326-938X> ; # Jan Veltman
+    eurio:isResultOf <https://techforfuture.nl/project/2110> .
+
+<https://doi.org/10.3390/make6030098> a schema:ScholarlyArticle ;
+    schema:name "Tertiary Review on Explainable Artificial Intelligence: Where Do We Stand?"@en ;
+    schema:author <https://orcid.org/0009-0004-9322-0674> ; # Annemarie
+    schema:author <https://orcid.org/0000-0002-2760-6892> ; # Faizan
+    schema:datePublished "2024-08-30"^^xsd:date ;
+    schema:publisher "MDPI" ;
+    schema:url "https://doi.org/10.3390/make6030098"^^xsd:anyURI ;
+    eurio:doi "10.3390/make6030098" .
+
+
+###### News Events #####
+<https://amilab.nl/lod/news/fabian-wint-wcm-award> a schema:NewsArticle ;
+    schema:name "Fabian wint WCM master thesis award"@nl ;
+    schema:name "Fabian wins WCM master thesis award"@en ;
+    schema:about <https://orcid.org/0009-0004-6331-2594> ;# Fabian Wientjes
+    schema:dateCreated "2025-11-05"^^xsd:date .

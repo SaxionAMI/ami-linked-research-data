@@ -1,0 +1,188 @@
+@prefix schema: <http://schema.org/> .
+@prefix pnv: <https://w3id.org/pnv#> .
+
+<https://orcid.org/0000-0002-2760-6892> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Ahmed" ;
+        pnv:givenName "Faizan"
+    ] .
+
+<https://orcid.org/0000-0001-6156-6815> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Ayele" ;
+        pnv:givenName "Eyuel Debebe"
+    ] .
+
+<https://orcid.org/0009-0007-2805-1327> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Bagave" ;
+        pnv:givenName "Prachi"
+    ] .
+
+<https://orcid.org/0000-0003-2678-6438> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Baten" ;
+        pnv:givenName "Chris"
+    ] .
+
+<https://orcid.org/0000-0002-4023-2522> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Boer" ;
+        pnv:surnamePrefix "de" ;
+        pnv:givenName "Johannes"
+    ] .
+
+<https://orcid.org/0009-0000-5505-4530> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Çolakhasanoglu" ;
+        pnv:givenName "Selin"
+    ] .
+
+<https://orcid.org/0000-0003-2638-7808> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Ebben" ;
+        pnv:givenName "Peter"
+    ] .
+
+<https://orcid.org/0000-0002-6605-4998> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Ferreira Gonzalez" ;
+        pnv:givenName "Javier"
+    ] .
+
+<https://orcid.org/0000-0002-2626-1837> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Goering-Zaburnenko " ;
+        pnv:givenName "Tatiana"
+    ] .
+
+<https://orcid.org/0009-0007-4266-1607> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Heerlien" ;
+        pnv:givenName "Iris"
+    ] .
+
+<https://orcid.org/0009-0004-9322-0674> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Jutte" ;
+        pnv:givenName "Annemarie"
+    ] .
+
+<https://orcid.org/0000-0001-7358-6434> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Lavric" ;
+        pnv:givenName "Miha"
+    ] .
+
+<https://orcid.org/0000-0001-8578-6310> a schema:Person ;
+    pnv:hasName [
+        pnv:baseSurname "Leeuwen" ;
+        pnv:surnamePrefix "van" ;
+        pnv:givenName "Henk"
+] .
+
+<https://orcid.org/0000-0002-2626-1837> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Linssen" ;
+        pnv:givenName "Jeroen"
+    ] .
+
+<https://orcid.org/0000-0003-4464-1603> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Plass-Oude Bos" ;
+        pnv:givenName "Danny"
+    ] .
+
+<https://orcid.org/0009-0007-2230-1567> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Rijken" ;
+        pnv:givenName "Noortje"
+    ] .
+
+<https://orcid.org/0000-0003-2368-4970> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Salomons" ;
+        pnv:givenName "Etto"
+    ] .
+
+<https://orcid.org/0000-0002-1909-9763> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Teeuw" ;
+        pnv:givenName "Wouter" ;
+        pnv:initials "W.B."
+    ] .
+
+<https://orcid.org/0000-0002-9525-5633> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Ton" ;
+        pnv:givenName "Bram" ;
+        pnv:initials "B.T."
+    ] .
+
+<https://orcid.org/0000-0003-4391-1245> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Tunuguntla" ;
+        pnv:givenName "Deepak"
+    ] .
+
+<https://orcid.org/0000-0001-6326-938X> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Veltman" ;
+        pnv:givenName "Jan"
+    ] .
+
+<https://orcid.org/0009-0004-6331-2594> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Wientjes" ;
+        pnv:givenName "Fabian"
+    ] .
+
+# External collaborators
+<https://orcid.org/0000-0002-2850-4265> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Gillani" ;
+        pnv:givenName "Ghayoor"
+    ] .
+
+<https://orcid.org/0009-0000-8042-8071> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Harinck" ;
+        pnv:givenName "Marc"
+    ] .
+
+<https://orcid.org/0000-0002-3399-1790> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Havinga" ;
+        pnv:givenName "Paul" ;
+        pnv:prefix "prof. dr. ing"
+    ] .
+
+<https://orcid.org/0000-0001-6054-7997> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Albrecht Salviano" ;
+        pnv:givenName "Thiago"
+    ] .
+
+<https://orcid.org/0000-0001-8951-4320> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Sarwar" ;
+        pnv:givenName "Muhammad Shoaib"
+    ] .
+
+<https://orcid.org/0009-0009-6304-3773> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Veenstra" ;
+        pnv:givenName "Jelmer"
+    ] .
+
+<https://orcid.org/0009-0004-6073-4820> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Vancans" ;
+        pnv:givenName "Mikus"
+    ] .
+
+<https://orcid.org/0000-0001-6966-1729> a schema:Person ;
+    pnv:hasName [
+        pnv:surname "Visser" ;
+        pnv:givenName "Ronald"
+    ] .
